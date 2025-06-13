@@ -44,7 +44,7 @@ int main(int c, char *v[]) {
     void *recv_data = (void *)nvshmem_malloc(sizeof(char));
     assert(signal_buf != NULL);
 
-    int rounds = 10;
+    int rounds = 1000000;
     uint64_t start_value = 0;
 
     cudaEvent_t start, stop;

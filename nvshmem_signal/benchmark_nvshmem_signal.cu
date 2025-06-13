@@ -42,7 +42,7 @@ int main(int c, char *v[]) {
     signal_buf = (uint64_t *)nvshmem_malloc(sizeof(uint64_t));
     assert(signal_buf != NULL);
 
-    int rounds = 10;
+    int rounds = 1000000;
     uint64_t start_value = 0;
 
     cudaEvent_t start, stop;
